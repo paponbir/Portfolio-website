@@ -1,4 +1,5 @@
 # My Portfolio
+[My Portfolio link](https://paponbir.netlify.app/)
 
 A personalized, interactive portfolio website showcasing my skills, projects, and experiences as a Computer Science & Engineering graduate.
 
@@ -37,3 +38,4 @@ The contact form works through EmailJS. If you are forking this repo and want fo
 2. Connect your desired email service
 3. Create an email template
 4. Update `script.js` with your own `EMAILJS_PUBLIC_KEY`, `EMAILJS_SERVICE_ID`, and `EMAILJS_TEMPLATE_ID`.
+5. 
