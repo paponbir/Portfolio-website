@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papon Chandra Bir | Portfolio</title>
+    <meta name="description" content="Portfolio of Papon Chandra Bir, a Computer Science graduate.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Custom Font and Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">PCB.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <p class="greeting">Hi, I am</p>
+                <h1 class="name">Papon Chandra Bir</h1>
+                <h2 class="title">Computer Science &amp; Engineering Graduate</h2>
+                <p class="tagline">Passionate about Machine Learning, AI, and Software Development. Exploring advanced
+                    techniques to solve real-world problems.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <button id="openCvBtn" class="btn btn-secondary">View CV</button>
+                    <a href="#contact" class="btn btn-outline-burgundy">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image-container fade-in">
+                <div class="hero-image">
+                    <img src="papon.jpg" alt="Papon Chandra Bir Profile Picture" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">About Me</h2>
+            <div class="about-content fade-in-up">
+                <div class="about-text">
+                    <p>I am a highly motivated CSE Graduate with a strong foundation in computer science principles. My
+                        core interests lie in Machine Learning, Artificial Intelligence, and Computer Networking.</p>
+                    <p>Currently, I am exploring advanced machine learning techniques, specifically focusing on
+                        Generative Adversarial Networks (GANs) and Deepfake detection, aiming to solve complex,
+                        real-world problems. I love to learn, explore new technologies, and build robust software
+                        solutions.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-number counter" data-target="3.26" data-decimals="2">0.00</span>
+                            <span class="stat-text">Academic CGPA</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-number-wrapper">
+                                <span class="stat-number counter" data-target="3" data-decimals="0">0</span>
+                                <span class="stat-number">+</span>
+                            </div>
+                            <span class="stat-text">Core Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Technical Skills</h2>
+            <div class="skills-grid fade-in-up">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI &amp; Data Science</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Networking &amp; Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Computer Networking</span>
+                        <span class="skill-tag">Cisco Packet Tracer</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Excel</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Analytical Thinking</span>
+                        <span class="skill-tag">Consistency</span>
+                        <span class="skill-tag">Structural Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Featured Projects</h2>
+            <div class="project-grid fade-in-up">
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Enhancing Deepfake Detection Using Counter-GANS</h3>
+                        <p class="project-subtitle">Thesis | AI-Generated Image Identification</p>
+                        <p class="project-desc">Developed a robust AI-generated image detector using EfficientNetV2 and
+                            a Generative Adversarial Networks-based Counter-GAN.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>TensorFlow</span><span>Keras</span><span>CNN</span>
+                        </div>
+                        <button class="btn btn-outline-burgundy view-project-btn"
+                            data-title="Enhancing Deepfake Detection"
+                            data-subtitle="Thesis | AI-Generated Image Identification"
+                            data-desc="This thesis project focuses on distinguishing between real and AI-generated images. By utilizing a Counter-GAN architecture coupled with EfficientNetV2 for feature extraction, the system achieves high accuracy in spotting deepfakes across various generator models. The project emphasizes interpretability and robust performance on unseen datasets."
+                            data-tech="Python, TensorFlow, Keras, CNN, OpenCV">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Smart City Networking System</h3>
+                        <p class="project-desc">Designed and simulated a scalable smart city network with multi-layer
+                            security and redundant failover, ensuring reliable connectivity.</p>
+                        <div class="project-tech">
+                            <span>Cisco Packet Tracer</span><span>IoT</span><span>ASA Firewalls</span><span>OSPF</span>
+                        </div>
+                        <button class="btn btn-outline-burgundy view-project-btn"
+                            data-title="Smart City Networking System" data-subtitle="Network Architecture & Simulation"
+                            data-desc="Simulated a comprehensive smart city network infrastructure. The design incorporates IoT devices for city services, secure departmental VLANs, ASA firewalls for external perimeter defense, and OSPF routing protocols for dynamic, fault-tolerant internal routing. This showcases advanced network topology design and security best practices."
+                            data-tech="Cisco Packet Tracer, IoT, ASA Firewalls, OSPF, VLANs">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Movie Recommendation System</h3>
+                        <p class="project-desc">Built and deployed a movie recommendation system using Streamlit that
+                            suggests personalized movies based on user preferences and similarity analysis.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Cosine
+                                Similarity</span>
+                        </div>
+                        <button class="btn btn-outline-burgundy view-project-btn"
+                            data-title="Movie Recommendation System" data-subtitle="Machine Learning App"
+                            data-desc="An interactive web application that provides movie recommendations. By applying content-based filtering algorithms and cosine similarity on movie metadata (genres, cast, crew, keywords), the system accurately suggests similar films. The UI was built with Streamlit to enable rapid, user-friendly interaction."
+                            data-tech="Python, Scikit-learn, Pandas, Streamlit, Cosine Similarity">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Education</h2>
+            <div class="timeline fade-in-up">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2022 – Jan 2026</div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Science, Computer Science and Engineering</h3>
+                        <h4>Daffodil International University</h4>
+                        <div class="grade-badge-container"><span class="grade-badge">CGPA 3.26 Out of 4</span></div>
+                        <p>Relevant Courses: Machine Learning, Computer Networking, Software Engineering.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">July 2017 – July 2019</div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Certificate (Science)</h3>
+                        <h4>Aftab Uddin School And College</h4>
+                        <div class="grade-badge-container"><span class="grade-badge">GPA 4.83 Out Of 5</span></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Completed 2017</div>
+                    <div class="timeline-content">
+                        <h3>Secondary School Certificate (Science)</h3>
+                        <h4>Aftab Uddin School And College</h4>
+                        <div class="grade-badge-container"><span class="grade-badge">GPA 5.00 Out Of 5</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Experience</h2>
+            <div class="timeline fade-in-up">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Feb 2022 – Dec 2025</div>
+                    <div class="timeline-content">
+                        <h3>Executive Member</h3>
+                        <h4>Computer Programming Club, DIU</h4>
+                        <p>Organized ICPC Asia Dhaka Regional Contest 2024. Actively arranged Saraswati Puja twice in
+                            DIU as Organizing Secretary.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Hire Me</h2>
+            <div class="contact-content fade-in-up">
+                <div class="contact-info">
+                    <div class="availability-badge">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Available for Freelance & Full-time Roles</span>
+                    </div>
+                    <h3 class="highlight-text">Let's Build Something Extraordinary.</h3>
+                    <p class="pitch-text">I am currently actively seeking new opportunities to bring advanced machine
+                        learning techniques and polished, high-performance web development to ambitious projects. If you
+                        are looking for a dedicated, results-driven engineer to translate your vision into reality,
+                        let's talk.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="method-details">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Mirpur-2, Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="contact-method-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="method-details">
+                                <span class="method-label">Call Me Directly</span>
+                                <span class="method-value">01638673176</span>
+                            </div>
+                        </div>
+                        <div class="contact-method-card">
+                            <i class="fas fa-envelope"></i>
+                            <div class="method-details">
+                                <span class="method-label">Email Me</span>
+                                <a href="mailto:paponbir.ch@gmail.com" class="method-value">paponbir.ch@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" id="submitBtn" class="btn btn-primary submit-btn">Send Message</button>
+                        <!-- Success / error feedback shown here -->
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Papon Chandra Bir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2 id="modalTitle" class="modal-title">Project Title</h2>
+                <h4 id="modalSubtitle" class="modal-subtitle">Project Subtitle</h4>
+                <div class="modal-tech-stack" id="modalTech">
+                    <!-- Tech spans injected here -->
+                </div>
+                <div class="modal-divider"></div>
+                <div class="modal-desc-container">
+                    <p id="modalDesc" class="modal-desc">Detailed project description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Viewer Modal -->
+    <div id="cvOverlay" class="modal-overlay">
+        <div class="cv-modal-container">
+            <div class="cv-modal-header">
+                <h3 class="cv-title"><i class="fas fa-file-pdf"></i> Papon Chandra Bir - Resume</h3>
+                <div class="cv-actions">
+                    <a href="black and White Clean and Professional Resume.pdf" download="Papon_Chandra_Bir_CV.pdf" class="btn btn-primary btn-sm cv-download-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <button class="cv-close-btn">&times;</button>
+                </div>
+            </div>
+            <div class="cv-body">
+                <iframe src="black and White Clean and Professional Resume.pdf" class="cv-iframe" title="Papon Chandra Bir Resume"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
